@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
 public class Main {
-
     public static void main(String [] args){
         Scanner s = new Scanner(System.in);
         System.out.println("Введите данные для вычисления через пробел: ");
@@ -16,7 +14,6 @@ public class Main {
         if(newStr.length!=3){                //если длина нового массива больше 3 или меньше 3
             resultOutput = "Формат математической операции не удовлетворяет заданию";
         } else {
-
             try {
                 Integer num1 = Integer.valueOf(newStr[0]);
                 Integer num2 = Integer.valueOf(newStr[2]);
@@ -44,91 +41,66 @@ public class Main {
                 if ((newStr[0].equals("I") || newStr[0].equals("II") || newStr[0].equals("III") || newStr[0].equals("IV") || newStr[0].equals("V") ||
                         newStr[0].equals("VI") || newStr[0].equals("VII") || newStr[0].equals("VIII") || newStr[0].equals("IX") || newStr[0].equals("X")) &&
                         (newStr[2].equals("I") || newStr[2].equals("II") || newStr[2].equals("III") || newStr[2].equals("IV") || newStr[2].equals("V") ||
-                                newStr[2].equals("VI") || newStr[2].equals("VII") || newStr[2].equals("VIII") || newStr[2].equals("IX") || newStr[2].equals("X"))) {
+                        newStr[2].equals("VI") || newStr[2].equals("VII") || newStr[2].equals("VIII") || newStr[2].equals("IX") || newStr[2].equals("X"))) {
                     int num1 = 0;
                     int num2 = 0;
                     switch (newStr[0]) {
-                        case "I":
-                            num1 = 1;
+                        case "I": num1 = 1;
                             break;
-                        case "II":
-                            num1 = 2;
+                        case "II": num1 = 2;
                             break;
-                        case "III":
-                            num1 = 3;
+                        case "III": num1 = 3;
                             break;
-                        case "IV":
-                            num1 = 4;
+                        case "IV": num1 = 4;
                             break;
-                        case "V":
-                            num1 = 5;
+                        case "V": num1 = 5;
                             break;
-                        case "VI":
-                            num1 = 6;
+                        case "VI": num1 = 6;
                             break;
-                        case "VII":
-                            num1 = 7;
+                        case "VII": num1 = 7;
                             break;
-                        case "VIII":
-                            num1 = 8;
+                        case "VIII": num1 = 8;
                             break;
-                        case "IX":
-                            num1 = 9;
+                        case "IX": num1 = 9;
                             break;
-                        case "X":
-                            num1 = 10;
+                        case "X": num1 = 10;
                             break;
                         default:
                             resultOutput = "Формат математической операции не удовлетворяет заданию";
                     }
                     switch (newStr[2]) {
-                        case "I":
-                            num2 = 1;
+                        case "I": num2 = 1;
                             break;
-                        case "II":
-                            num2 = 2;
+                        case "II": num2 = 2;
                             break;
-                        case "III":
-                            num2 = 3;
+                        case "III": num2 = 3;
                             break;
-                        case "IV":
-                            num2 = 4;
+                        case "IV": num2 = 4;
                             break;
-                        case "V":
-                            num2 = 5;
+                        case "V": num2 = 5;
                             break;
-                        case "VI":
-                            num2 = 6;
+                        case "VI": num2 = 6;
                             break;
-                        case "VII":
-                            num2 = 7;
+                        case "VII": num2 = 7;
                             break;
-                        case "VIII":
-                            num2 = 8;
+                        case "VIII": num2 = 8;
                             break;
-                        case "IX":
-                            num2 = 9;
+                        case "IX": num2 = 9;
                             break;
-                        case "X":
-                            num2 = 10;
+                        case "X": num2 = 10;
                             break;
                         default:
                             resultOutput = "Формат математической операции не удовлетворяет заданию";
                     }
                     int result = 0;
                     switch (newStr[1]) {
-                        case "+":
-                            result = num1 + num2;
+                        case "+": result = num1 + num2;
                             break;
-                        case "-":
-                            result = num1 - num2;
+                        case "-": result = num1 - num2;
                             break;
-                        case "*":
-                            result = num1 * num2;
+                        case "*": result = num1 * num2;
                             break;
-                        case "/":
-                            result = num1 / num2;
-                            ;
+                        case "/":result = num1 / num2;
                             break;
                         default:
                             resultOutput = "Формат математической операции не удовлетворяет заданию";
